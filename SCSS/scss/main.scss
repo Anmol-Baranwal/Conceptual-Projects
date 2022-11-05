@@ -1,0 +1,52 @@
+@import './variables';
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin theme($light-theme: true){
+    @if $light-theme {
+        background: lighten($primary-color, 100%);
+        color: darken($text-color-v2, 100%);
+    }
+}
+
+
+body {
+    background: $primary-color;
+}
+
+.main{
+    
+    // p{
+    //     font-weight: map-get($font-weights, bold );
+    // }
+
+    // &__paragraph{
+    //     font-weight: map-get($font-weights, bold );
+    // }
+    @include flexCenter(column);
+    
+    #{&}__paragraph{                                       //interpolation      
+        // font-weight: map-get($font-weights, bold );      one way to do this
+        font-weight: weight(regular);
+        &:hover{
+            color:$text-color-v2;
+        }
+    }
+
+
+}
+
+
+.light{
+    @include theme($light-theme: true);
+}
+
+

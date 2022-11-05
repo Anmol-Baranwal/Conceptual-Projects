@@ -1,0 +1,20 @@
+body {
+  background: #f5a425;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__paragraph {
+  font-weight: 400;
+}
+.main .main__paragraph:hover {
+  color: #fff;
+}
+
+.light {
+  background: white;
+  color: black;
+}/*# sourceMappingURL=main.css.map */
