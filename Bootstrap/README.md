@@ -1,6 +1,6 @@
 # 🚀 Bootstrap 5 Website 🚀
 
-This is a small game created with JQuery, a JavaScript framework that includes basic front-end programming.
+This is a small bootstrap website with 8 sections on home page, login page, and signup page.
 
 <br>
 
